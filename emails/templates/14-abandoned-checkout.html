@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>Still thinking it over?</title>
+<!--
+  Woman Bloom · 14 Abandoned checkout
+  Template : Shopify · Abandoned checkout
+  Trigger  : Checkout started, not completed after 1 hour (consented customers only)
+  Subject  : Still thinking it over?
+  Variables: checkout.line_items, checkout.abandoned_checkout_url, discount_code (if any)
+  Sample copy and values are shown inline — swap for the Liquid variables listed above.
+  Spec: ../../Email specs.md
+-->
+<!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><![endif]-->
+<style>
+  @font-face { font-family: "Figtree"; font-style: normal; font-weight: 300 900; src: url("{{ 'Figtree-Variable.woff2' | asset_url }}") format("woff2"); }
+  body { margin: 0; padding: 0; width: 100% !important; -webkit-text-size-adjust: 100%; }
+  img { border: 0; line-height: 100%; outline: none; text-decoration: none; }
+  @media (max-width: 620px) {
+    .px { padding-left: 24px !important; padding-right: 24px !important; }
+    .h1 { font-size: 26px !important; }
+    .stack { display: block !important; width: 100% !important; box-sizing: border-box; }
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background:#EDE4E0;">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">Your bag's saved, and your 10% code still works.&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#EDE4E0"><tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFFFFF" style="width:100%;max-width:600px;">
+<tr><td align="center" style="padding:30px 48px 26px;border-bottom:1px solid #F0E2DB;"><a href="{{ shop.url }}"><img src="{{ 'wb-logo-maroon@2x.png' | asset_url }}" width="106" height="36" alt="Woman Bloom" style="display:block;"></a></td></tr>
+<tr><td class="px" style="padding:0 48px;"><div style="padding-top:40px;text-align:center;font-family:Figtree, Arial, Helvetica, sans-serif;"><div style="font-size:12px;font-weight:800;letter-spacing:1.7px;text-transform:uppercase;color:#F3489B;margin-bottom:12px;">Your bag</div><h1 class="h1" style="margin:0 0 14px;font-size:30px;line-height:1.15;font-weight:700;color:#2B1620;">Still thinking it over?</h1><p style="margin:0;font-size:16px;line-height:1.6;color:#6E545C;">We've saved your bag. Pick up where you left off. Your 10% welcome code is still applied.</p></div></td></tr>
+<tr><td class="px" style="padding:0 48px;"><div style="padding-top:32px;font-family:Figtree, Arial, Helvetica, sans-serif;"><div style="font-size:12px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#A9909A;padding-bottom:12px;border-bottom:1px solid #F0E2DB;">In your bag</div>
+{% for line in line_items %}<!-- sample rows below; replace with the Liquid loop -->{% endfor %}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-bottom:1px solid #F7EDE8;"><tr><td width="64" style="padding:16px 16px 16px 0;"><img src="{{ line.image | img_url: '128x128' }}" width="64" height="64" alt="Collagen Complex" style="display:block;border-radius:12px;background:#8C1F52;"></td><td style="font-family:Figtree, Arial, Helvetica, sans-serif;"><div style="font-size:16px;font-weight:700;color:#2B1620;">Collagen Complex</div><div style="font-size:13px;color:#6E545C;padding-top:3px;">Citrus • 30 servings</div></td><td align="right" style="font-family:Figtree, Arial, Helvetica, sans-serif;white-space:nowrap;"><div style="font-size:15px;font-weight:700;color:#2B1620;">€39.00</div><div style="font-size:13px;color:#6E545C;padding-top:3px;">Qty 1</div></td></tr></table></div></td></tr>
+<tr><td class="px" style="padding:0 48px;"><div style="padding-top:28px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:0 auto;"><tr><td align="center" bgcolor="#8C1F52" style="border-radius:999px;">
+<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="{{ url }}" style="height:52px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#8C1F52"><center style="color:#FFF7F1;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Return to checkout</center></v:roundrect><![endif]-->
+<!--[if !mso]><!--><a href="{{ url }}" style="display:inline-block;padding:16px 34px;font-family:Figtree, Arial, Helvetica, sans-serif;font-size:16px;font-weight:700;line-height:20px;color:#FFF7F1;text-decoration:none;border-radius:999px;">Return to checkout</a><!--<![endif]-->
+</td></tr></table></div></td></tr>
+<tr><td class="px" style="padding:0 48px;"><div style="padding-top:30px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FBE3EE" style="border-radius:16px;"><tr><td align="center" style="padding:22px 24px;font-family:Figtree, Arial, Helvetica, sans-serif;"><div style="font-size:17px;font-weight:700;color:#8C1F52;padding-bottom:6px;">30-day money-back promise</div><div style="font-size:14px;line-height:1.6;color:#2B1620;">Try it for 30 days. If it's not for you, we'll refund you, no awkward questions.</div></td></tr></table></div></td></tr>
+<tr><td style="height:44px;line-height:44px;font-size:0;">&nbsp;</td></tr>
+<tr><td align="center" bgcolor="#8C1F52" class="px" style="padding:34px 48px 30px;font-family:Figtree, Arial, Helvetica, sans-serif;color:#FFF7F1;">
+<img src="{{ 'wb-logo-cream@2x.png' | asset_url }}" width="88" height="30" alt="Woman Bloom" style="display:block;margin:0 auto 18px;">
+<div style="font-size:14px;font-weight:700;padding-bottom:14px;"><a href="{{ shop.url }}/collections/all" style="color:#FFF7F1;text-decoration:none;">Shop</a> &nbsp;·&nbsp; <a href="{{ shop.url }}/pages/subscriptions" style="color:#FFF7F1;text-decoration:none;">Subscriptions</a> &nbsp;·&nbsp; <a href="{{ shop.url }}/pages/faq" style="color:#FFF7F1;text-decoration:none;">FAQ</a> &nbsp;·&nbsp; <a href="{{ shop.url }}/pages/contact" style="color:#FFF7F1;text-decoration:none;">Contact</a></div>
+<div style="font-size:13px;color:#F6D4E4;padding-bottom:18px;">Instagram · TikTok · Facebook</div>
+<div style="font-size:12px;line-height:1.6;color:#F6D4E4;">Questions? Reply to this email or write to hello@womanbloom.com<br>Woman Bloom · Malta</div>
+<div style="font-size:12px;color:#F6D4E4;padding-top:12px;">You're getting this because you signed up at womanbloom.com. <a href="{{ unsubscribe_url }}" style="color:#FFF7F1;text-decoration:underline;">Unsubscribe</a></div>
+</td></tr>
+</table>
+</td></tr></table>
+</body>
+</html>
